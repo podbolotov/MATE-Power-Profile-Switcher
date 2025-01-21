@@ -3,5 +3,6 @@ Simple power profile switcher (depends on powerprofilesctl) for MATE Desktop Env
 
 Install:
 ```
-wget -O - https://raw.githubusercontent.com/podbolotov/MATE-Power-Profile-Switcher/refs/heads/main/install.sh | bash
+bash <(wget -qO- https://raw.githubusercontent.com/podbolotov/MATE-Power-Profile-Switcher/refs/heads/main/install.sh)
+
 ```
