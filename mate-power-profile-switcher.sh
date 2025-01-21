@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-SYSTEM_HAS_POWERPROFILECTL=$(which powerprofilesctl | grep 'powerprofilectl')
-if [ -n "$SYSTEM_HAS_POWERPROFILECTL" ]
+if ! command -v powerprofilesctl 2>&1 >/dev/null
 then
   zenity --error \
-  --title="powerprofilectl is not found" \
+  --title="powerprofilesctl is not found" \
   --text="You have to install power-profiles-daemon"
   exit 1
 fi
