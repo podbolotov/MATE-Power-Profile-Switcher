@@ -1,5 +1,5 @@
 # MATE Power Profiles Switcher
-Simple power profiles switcher (depends on powerprofilesctl) for MATE Desktop Environment.
+Simple power profiles switcher (depends on `powerprofilesctl`) for **MATE Desktop Environment**.
 
 Written in pure **BASH**, require nothing except of `power-profiles-daemon` and `zenity`.
 
@@ -7,12 +7,12 @@ Written in pure **BASH**, require nothing except of `power-profiles-daemon` and 
 
 ## Description
 
-This script provide only simple zenity-based GUI and has no tray icon or any other control options (but you always can pin script launcher to panel, if you want).
+This script provides only simple zenity-based GUI and has no tray icon or any other control options (but you always can pin script launcher to panel, if you want).
 
-**Tested only on Debian 12 Bookworm** with MATE.
+**Tested only on Debian 12 Bookworm with MATE**.
 
 ## Installation
-Installation available via install.sh.\
+Installation available via `install.sh`.\
 It can be runned from GitHub directly, using command below.
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/podbolotov/MATE-Power-Profile-Switcher/refs/heads/main/install.sh)
