@@ -42,6 +42,7 @@ esac
 
 CHOSEN_PROFILE=$(zenity --list --radiolist \
   --title="Power Profile Switcher" \
+  --width=300 --height=250 \
   --text="Choose power profile from the list bellow. \n\nYour current power profile: $CURRENT_PROFILE.\n" \
   --column="Select" --column="Profile" \
     $POWERSAVER_DEFAULT_STATE "power-saver" \
@@ -62,6 +63,7 @@ then
   if [[ "$NEW_POWER_PROFILE" == "$CHOSEN_PROFILE" ]]
   then
     zenity --info \
+    --width=300 \
     --title="Profile is successfully changed" \
     --text="Profile \"$CHOSEN_PROFILE\" is activated."
   else
@@ -76,6 +78,7 @@ Current system profile: $NEW_POWER_PROFILE."
 else
   echo "Profile $CHOSEN_PROFILE is already active."
   zenity --info \
+  --width=300 \
   --title="Profile is not changed" \
   --text="Profile \"$CHOSEN_PROFILE\" is already active."
 fi
