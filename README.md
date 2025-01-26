@@ -15,7 +15,7 @@ This script provides only simple zenity-based GUI and has no tray icon or any ot
 Installation available via `install.sh`.\
 It can be runned from GitHub directly, using command below.
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/podbolotov/MATE-Power-Profile-Switcher/refs/heads/main/install.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/podbolotov/MATE-Power-Profiles-Switcher/refs/heads/main/install.sh)
 
 ```
 Installer will create hidden directory in your `$HOME`, download script and create launcher in Applications menu. 
