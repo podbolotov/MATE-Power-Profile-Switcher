@@ -41,8 +41,8 @@ esac
 
 
 CHOSEN_PROFILE=$(zenity --list --radiolist \
-  --title="Power Profile Switcher" \
-  --width=300 --height=250 \
+  --title="MATE Power Profiles Switcher" \
+  --width=350 --height=300 \
   --text="Choose power profile from the list bellow. \n\nYour current power profile: $CURRENT_PROFILE.\n" \
   --column="Select" --column="Profile" \
     $POWERSAVER_DEFAULT_STATE "power-saver" \
