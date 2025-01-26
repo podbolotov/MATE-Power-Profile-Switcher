@@ -15,9 +15,9 @@ fi
 echo  
 echo "MATE Power Profiles Switcher installation is started."
 echo  
-echo "Script will create directory .mate-power-profile-switcher in your \$HOME ($HOME),"
-echo "place mate-power-profile-switcher.sh script in created directory, execute command \"chmod +x\" for"
-echo "placed script, and create mate-power-profile-switcher.desktop for script file in $HOME/.local/share/applications"
+echo "Script will create directory .mate-power-profiles-switcher in your \$HOME ($HOME),"
+echo "place mate-power-profiles-switcher.sh script in created directory, execute command \"chmod +x\" for"
+echo "placed script, and create mate-power-profiles-switcher.desktop for script file in $HOME/.local/share/applications"
 echo  
 
 while true; do
@@ -25,15 +25,15 @@ while true; do
     case $yn in
     
         "yes" ) 
-        mkdir -p ~/.mate-power-profile-switcher
+        mkdir -p ~/.mate-power-profiles-switcher
         
         wget \
-        "https://raw.githubusercontent.com/podbolotov/MATE-Power-Profile-Switcher/refs/heads/main/mate-power-profile-switcher.sh" \
-        -O ~/.mate-power-profile-switcher/mate-power-profile-switcher.sh
+        "https://raw.githubusercontent.com/podbolotov/MATE-Power-Profiles-Switcher/refs/heads/main/mate-power-profiles-switcher.sh" \
+        -O ~/.mate-power-profiles-switcher/mate-power-profiles-switcher.sh
         
-        chmod +x ~/.mate-power-profile-switcher/mate-power-profile-switcher.sh
+        chmod +x ~/.mate-power-profiles-switcher/mate-power-profiles-switcher.sh
         
-        DESKTOP_FILE=$HOME/.local/share/applications/mate-power-profile-switcher.desktop
+        DESKTOP_FILE=$HOME/.local/share/applications/mate-power-profiles-switcher.desktop
         touch $DESKTOP_FILE
         
         echo "#!/usr/bin/env xdg-open" >> $DESKTOP_FILE
@@ -42,16 +42,16 @@ while true; do
         echo "Version=1.0" >> $DESKTOP_FILE
         echo "Type=Application" >> $DESKTOP_FILE
         echo "Terminal=false" >> $DESKTOP_FILE
-        echo "Exec=bash $HOME/.mate-power-profile-switcher/mate-power-profile-switcher.sh" >> $DESKTOP_FILE
+        echo "Exec=bash $HOME/.mate-power-profiles-switcher/mate-power-profiles-switcher.sh" >> $DESKTOP_FILE
         echo "Icon=ac-adapter" >> $DESKTOP_FILE
-        echo "Name=MATE Power Profile Switcher" >> $DESKTOP_FILE
+        echo "Name=MATE Power Profiles Switcher" >> $DESKTOP_FILE
         echo "Categories=Utility" >> $DESKTOP_FILE
         echo "Hidden=false" >> $DESKTOP_FILE
         
         chmod +x $DESKTOP_FILE
         
         echo  
-        echo "Installation complete. You can find \"MATE Power Profile Switcher\" icon in Accessories category in Applications menu."
+        echo "Installation complete. You can find \"MATE Power Profiles Switcher\" icon in Accessories category in Applications menu."
         echo  
         
         break
