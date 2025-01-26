@@ -21,5 +21,5 @@ bash <(wget -qO- https://raw.githubusercontent.com/podbolotov/MATE-Power-Profile
 Installer will create hidden directory in your `$HOME`, download script and create launcher in Applications menu. 
 
 ## Uninstallation
-1. Remove directory `.mate-power-profile-switcher` from your `$HOME`. 
-2. Remove file `mate-power-profile-switcher.desktop` from `$HOME/.local/share/applications`.
+1. Remove directory `.mate-power-profiles-switcher` from your `$HOME`. 
+2. Remove file `mate-power-profiles-switcher.desktop` from `$HOME/.local/share/applications`.
